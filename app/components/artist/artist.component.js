@@ -22,7 +22,7 @@ var ArtistComponent = (function () {
             .map(function (params) { return params['id']; })
             .subscribe(function (id) {
             _this._spotifyService.getArtist(id)
-                .subscribr(function (artist) {
+                .subscribe(function (artist) {
                 _this.artist = artist;
             });
         });

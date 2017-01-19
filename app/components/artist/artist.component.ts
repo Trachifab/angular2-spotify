@@ -25,7 +25,7 @@ export class ArtistComponent implements OnInit{
             .map(params => params['id'])
             .subscribe((id) => {
                 this._spotifyService.getArtist(id)
-                    .subscribr(artist =>{
+                    .subscribe(artist =>{
                         this.artist = artist;
                     });
             });
